@@ -1,3 +1,23 @@
+# Completed
+
+1. Created a project hackernews with server side rendering with hydration
+2. Used API https://hn.algolia.com/api/v1/search?query=... to fetch data first time load.
+3. Saving the above API data in local storage and modifying the same on upvote and hide comments.
+4. Every time on upvote/hide comments events local storage data will be modified and the samewill be reflected on UI.
+5. Even if we refresh the browser the changes we made is made to bepersisted.
+6. Chart Data is also updated on upvote/hide comment events
+7. Added pagination to the table
+8. Added css as per the mockup provided.
+9. Once we remove all the records from table by clicking on hide on each row then table and chart will be unmounted
+   Code is written to show some message..
+   "No Data Found in local storage. Please reload the page again to fetch from API"
+10. Used redux to maintain the workflow.
+
+# Pending
+
+1. test cases
+2. cicd
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
