@@ -12,7 +12,13 @@ const hackerNewsAction = () => {
           newObj['num_comments'] = element.num_comments;
           newObj['points'] = element.points;
           newObj['upvote'] = '';
-          newObj['title'] = element.title;
+          newObj['news_details'] = {
+            title: element.title,
+            url: element.url,
+            author: element.author,
+            created_at_i: element.created_at_i,
+          };
+
           hackerNewsArr.push(newObj);
         });
 
@@ -30,7 +36,12 @@ const hackerNewsAction = () => {
           newObj['num_comments'] = element.num_comments;
           newObj['points'] = element.points;
           newObj['upvote'] = '';
-          newObj['title'] = element.title;
+          newObj['news_details'] = {
+            title: element.title,
+            url: element.url,
+            author: element.author,
+            created_at_i: element.created_at_i,
+          };
           hackerNewsArr.push(newObj);
         }
       );

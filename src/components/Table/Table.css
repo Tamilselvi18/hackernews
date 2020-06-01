@@ -6,7 +6,7 @@
   border-color: #e67e22;
   color: white;
   text-align: left;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .table-custom {
@@ -15,7 +15,7 @@
 }
 
 .table-custom tbody {
-  font-size: 12px;
+  font-size: 0.8rem;
   text-align: left;
 }
 
@@ -42,11 +42,13 @@
   color: blue;
   text-decoration: underline;
   cursor: pointer;
+  display: inline-block;
 }
 .pseudoLink:visited {
   color: purple;
   text-decoration: underline;
   cursor: pointer;
+  display: inline-block;
 }
 
 .pagination {
@@ -58,7 +60,7 @@
 }
 .pagination-prevnext {
   border: none;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #e67e22;
   font-weight: bold;
   margin: 2px;
@@ -67,10 +69,36 @@
 
 .disable-previous {
   border: none;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 .disable-next {
   border: none;
-  font-size: 12px;
+  font-size: 0.8rem;
+}
+
+.url {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 0.8rem;
+  margin: 0;
+  /* resize: horizontal; */
+  display: inline-block;
+  color: rgb(0, 0, 0, 0.5);
+  line-height: 12px;
+}
+
+.url a:link {
+  color: rgb(0, 0, 0, 0.5);
+}
+.url a:visited {
+  color: purple;
+}
+
+.author {
+  display: inline-block;
+  width: 100px;
 }

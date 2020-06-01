@@ -12,7 +12,10 @@ class Home extends React.Component {
         { name: 'num_comments', width: '10%', paddingLeft: '2%' },
         { name: 'points', width: '10%', paddingLeft: '0%' },
         { name: 'upvote', width: '10%', paddingLeft: '2%' },
-        { name: 'title', width: '70%', paddingLeft: '0%' },
+        { name: 'news_details', width: '70%', paddingLeft: '0%' },
+        // { name: 'author', width: '0%', paddingLeft: '0%' },
+        // { name: 'url', width: '0%', paddingLeft: '0%' },
+        // { name: 'created_at_i', idth: '0%', paddingLeft: '0%' },
       ],
     };
   }

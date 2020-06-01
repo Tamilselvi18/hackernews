@@ -36,15 +36,34 @@ function template() {
                   return (
                     <tr key={i + 'r'} id={'td-' + i} className={rowCls}>
                       {this.props.keys.map((o, i) => {
-                        let titleEditLink = o.name === 'title' && (
+                        let titleEditLink = o.name === 'news_details' && (
                           <div>
-                            {obj[o.name]}
-                            <span
+                            {obj[o.name]['title']} {'  '}
+                            <div className='url'>
+                              (
+                              {obj[o.name]['url'].length !== 0 && (
+                                <a
+                                  href={obj[o.name]['url']}
+                                  target='_blank'
+                                  rel='noopener noreferrer'
+                                >
+                                  {' '}
+                                  {obj[o.name]['url']}
+                                </a>
+                              )}
+                              )
+                            </div>
+                            {'  '}
+                            by{' '}
+                            <div className='author'>
+                              {obj[o.name]['author']}
+                            </div>
+                            <div
                               className='pseudoLink'
                               onClick={this.hideComment}
                             >
                               [hide]
-                            </span>
+                            </div>
                           </div>
                         );
                         let colData =
@@ -54,7 +73,7 @@ function template() {
                               onClick={this.upVote}
                               alt=''
                             />
-                          ) : o.name === 'title' ? (
+                          ) : o.name === 'news_details' ? (
                             titleEditLink
                           ) : (
                             obj[o.name]
